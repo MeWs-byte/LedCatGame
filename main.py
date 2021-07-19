@@ -7,7 +7,7 @@ app = Flask(__name__)
 app.secret_key = b'_1#y2l"F4Q8z\n\xec]/'
 up = 0
 @app.route('/', methods=['GET', 'POST'])
-@app.route('/index/', methods=['GET', 'POST'])      # get a mini dash going here to control all the states and see incoming alarm
+@app.route('/index/', methods=['GET', 'POST'])     
 def index():
     
     
@@ -24,7 +24,7 @@ def index():
         return redirect(url_for('index'))
     
   
-    if request.method == "GET" and request.args.get("up", ""):   # fast sweep up
+    if request.method == "GET" and request.args.get("up", ""): 
         status = 'fastSweepUp'
         print(status)
         upMe = request.args.get("up", "")
@@ -34,7 +34,7 @@ def index():
         lights.sweepRightSingleRed()
         print(upNr)
 
-    if request.method == "GET" and request.args.get("down", ""):  # fast sweep down
+    if request.method == "GET" and request.args.get("down", ""): 
         status = 'fastSweepDown'
         print(status)
         downMe = request.args.get("down", "")
@@ -71,11 +71,6 @@ def index():
         servoCat.servoRun()    
 
 
-
-
-
-
-
     if request.method == "GET" and request.args.get("rainbow", ""): # rainbow
         rainbowMe = request.args.get("rainbow", "") 
         lights.rainbow_cycle(0.00000009)
@@ -85,9 +80,6 @@ def index():
    
 
     return render_template('index.html')
-    
-
-
-
+  
 
 app.run(host="0.0.0.0",threaded=True)
