@@ -1,5 +1,5 @@
 #Led strip Cat toy with servo - controlled via web app
-Raspberry pi + Led strip + Micro Servo 
+Raspberry pi + Led strip  
 - update coming soon with more details 
 
 * clone this repo 
