@@ -19,5 +19,5 @@ That's it!
 
 ![web app]()
 
-<img src="https://github.com/MeWs-byte/LedCatGame/blob/master/catWebApp.jpeg" width=30% height=30%>
+<img src="https://github.com/MeWs-byte/LedCatGame/blob/master/catWebApp.jpeg" width=40% height=40%>
 
