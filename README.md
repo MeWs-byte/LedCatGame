@@ -1,8 +1,8 @@
 ### Led strip Cat toy with servo - controlled via web app
 
 Materials needed: Raspberry pi + ws2812b ledstrip + micro servo
-Data pin led -> GPIO 18
-Data pin servo -> GPIO 17
+* Data pin led -> GPIO 18
+* Data pin servo -> GPIO 17
 
 (Connect both the LEDs and the servo to 5v and GND..)
 
