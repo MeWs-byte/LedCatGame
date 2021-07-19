@@ -1,0 +1,5 @@
+Flask==1.1.2
+Adafruit_Blinka==6.9.1
+adafruit_circuitpython_neopixel==6.0.3
+board==1.0
+RPi==0.0.1

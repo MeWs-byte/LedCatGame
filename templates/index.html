@@ -1,0 +1,66 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+      body {
+        background-color: black;
+      }
+
+      img {
+  border-radius: 100%;
+    max-width: 40%;
+  height: auto;
+}
+      </style>
+      </head>
+    <div class="w3-content">
+    <div class="w3-container w3-monospace w3-center">
+ <p></p>   
+<img src="/static/text.png" alt="Jiji and Mao">
+<p></p>
+
+
+<form class="w3-text-blue">
+    <input class="w3-btn w3-blue" type="submit" name="up" value="Sweep up">
+</form> 
+
+<form class="w3-text-blue">
+    <input class="w3-btn w3-blue" type="submit" name="down" value="Sweep down">
+</form> 
+
+
+<form class="w3-text-red">
+    <input class="w3-btn w3-red" type="submit" name="BlinkUp" value="Blink up">
+</form> 
+
+<form class="w3-text-red">
+    <input class="w3-btn w3-red" type="submit" name="BlinkDown" value="Blink down">
+</form> 
+
+
+<form class="w3-text-green">
+    <input class="w3-btn w3-green" type="submit" name="rainbow" value="rainbow">
+</form> 
+
+<form class="w3-text-purple">
+    <input class="w3-btn w3-purple" type="submit" name="servo" value="servo">
+</form> 
+  <img src="/static/Jiji_Mao.jpg" alt="Jiji and Mao">
+    </div>
+  
+     </div>
+
+   
+
+ 
+    
+    
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul>
+        {% for message in messages %}
+        <li style="color:red">{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
