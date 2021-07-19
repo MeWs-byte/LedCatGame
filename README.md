@@ -6,7 +6,7 @@
 
 * sudo python3 main.py
 
-![alt text]()
+![web app]()
 
 <img src="https://github.com/MeWs-byte/LedCatGame/blob/master/catWebApp.jpeg" width=50% height=50%>
 
