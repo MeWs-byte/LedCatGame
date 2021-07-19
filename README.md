@@ -1,5 +1,6 @@
-# Led strip Cat toy with servo - controlled via web app
-Raspberry pi + Led strip  
+### Led strip Cat toy with servo - controlled via web app
+
+Materials needed: Raspberry pi + ws2812b ledstrip + micro servo
 - update coming soon with more details 
 
 * clone this repo 
