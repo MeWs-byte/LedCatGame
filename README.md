@@ -6,5 +6,5 @@
 
 * sudo python3 main.py
 
-![alt text](https://github.com/MeWs-byte/LedCatGame/blob/master/catWebApp.jpeg) 
+![alt text](https://github.com/MeWs-byte/LedCatGame/blob/master/catWebApp.jpeg width="400" height="790")
 
