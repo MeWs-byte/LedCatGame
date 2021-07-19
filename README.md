@@ -8,5 +8,5 @@
 
 ![web app]()
 
-<img src="https://github.com/MeWs-byte/LedCatGame/blob/master/catWebApp.jpeg" width=50% height=50%>
+<img src="https://github.com/MeWs-byte/LedCatGame/blob/master/catWebApp.jpeg" width=30% height=30%>
 
