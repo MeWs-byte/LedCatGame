@@ -32,3 +32,21 @@ def servoRun():
         KeyboardInterrupt
         p.stop()
         GPIO.cleanup()
+
+
+def servoTease():
+
+    try:
+       
+        #p.ChangeDutyCycle(5)
+        #time.sleep(0.5)
+       
+        p.ChangeDutyCycle(10)
+        time.sleep(0.5)
+       
+        p.ChangeDutyCycle(2.5)
+        time.sleep(0.5)
+    except:
+        KeyboardInterrupt
+        p.stop()
+        GPIO.cleanup()

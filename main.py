@@ -69,13 +69,18 @@ def index():
     if request.method == "GET" and request.args.get("servo", ""):
         servoMe = request.args.get("servo", "")
         servoCat.servoRun()    
-
+    if request.method == "GET" and request.args.get("servoB", ""):
+        servoMeToo = request.args.get("servoB", "")
+        servoCat.servoTease()  
 
     if request.method == "GET" and request.args.get("rainbow", ""): # rainbow
         rainbowMe = request.args.get("rainbow", "") 
         lights.rainbow_cycle(0.00000009)
         #lights.rainbow_cycle(0.009)    
-                 
+    if request.method == "GET" and request.args.get("rainbowB", ""): # rainbow
+        rainbowMeToo = request.args.get("rainbowB", "") 
+        lights.rainbow_cycleB(0.00002)
+        #lights.rainbow_cycle(0.009)                     
                 
    
 

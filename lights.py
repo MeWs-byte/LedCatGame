@@ -61,6 +61,17 @@ def rainbow_cycle(wait):
         pixels.fill((0,0,0))
         pixels.show()
 
+def rainbow_cycleB(wait):
+    pixels.fill((0,0,0))
+    pixels.show()
+    for j in range(255):
+        for i in range(num_pixels):
+            pixel_index = (i * 156 // num_pixels) + j
+            pixels[i] = wheel(pixel_index & 215)
+        pixels.show()
+        time.sleep(wait)
+        pixels.fill((0,0,0))
+        pixels.show()
 
 def blinkToRight():
     global pixie
