@@ -93,7 +93,7 @@ def sweepRightSingleRed():
 
             pixels[x] = (255, 0, 0)
             pixels.show()
-            time.sleep(0.02)
+            time.sleep(0.01) # was 0.2
             pixels[x] = (0, 0, 0)
             pixels.show()
 
@@ -104,7 +104,7 @@ def sweepLeftSingleRed():
 
             pixels[x] = (255, 0, 0)
             pixels.show()
-            time.sleep(0.02)
+            time.sleep(0.01)
             pixels[x] = (0, 0, 0)
             pixels.show()
 
@@ -142,35 +142,41 @@ def goRightSingleRed():
 
 
 def loopLeftSingleRed():
-    global wanderingpixie
+    try:
 
-        
-    pixels.fill((0,0,0))
-    pixels.show()
-    pixels[wanderingpixie + 1] = (255, 0, 0)
-    pixels.show()
-    time.sleep(0.1)
-    pixels.fill((0,0,0))
-    #pixels[wanderingpixie + 1] = (0, 0, 0)
-    pixels.show()
-    wanderingpixie = wanderingpixie + 1
+        global wanderingpixie
 
-    if wanderingpixie == 59:
-        wanderingpixie = 0
+            
+        pixels.fill((0,0,0))
+        pixels.show()
+        pixels[wanderingpixie + 1] = (255, 0, 0)
+        pixels.show()
+        time.sleep(0.1)
+        pixels.fill((0,0,0))
+        #pixels[wanderingpixie + 1] = (0, 0, 0)
+        pixels.show()
+        wanderingpixie = wanderingpixie + 1
+
+        if wanderingpixie == 59:
+            wanderingpixie = 0
+    except:
+        IndexError
         
 def loopRightSingleRed():
     global wanderingpixie
-    
-    pixels.fill((0,0,0))
-    pixels.show()
-    pixels[wanderingpixie - 1] = (255, 0, 0)
-    pixels.show()
-    time.sleep(0.1)
-    pixels.fill((0,0,0))
-    
-    #pixels[wanderingpixie - 1] = (0, 0, 0)
-    pixels.show()
-    wanderingpixie = wanderingpixie -1 
-    if wanderingpixie == 0:
-        wanderingpixie = 59
+    try:
+
+        pixels.fill((0,0,0))
+        pixels.show()
+        pixels[wanderingpixie - 1] = (255, 0, 0)
+        pixels.show()
+        time.sleep(0.1)
+        pixels.fill((0,0,0))
         
+        #pixels[wanderingpixie - 1] = (0, 0, 0)
+        pixels.show()
+        wanderingpixie = wanderingpixie -1 
+        if wanderingpixie == 0:
+            wanderingpixie = 59
+    except:
+        IndexError        
