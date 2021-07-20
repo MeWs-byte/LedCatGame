@@ -53,7 +53,7 @@ def index():
             BlinkUpMe = request.args.get("BlinkUp", "")
 
             #lights.goRightSingleRed()
-            lights.loopLeftSingleRed() 
+            lights.BloopLeftSingleRed() 
 
     if request.method == "GET" and request.args.get("BlinkDown", ""):
         status = 'blinkDown'
@@ -64,7 +64,7 @@ def index():
             
             #lights.goLeftSingleRed()  
             
-            lights.loopRightSingleRed()
+            lights.BloopRightSingleRed()
 
     if request.method == "GET" and request.args.get("servo", ""):
         servoMe = request.args.get("servo", "")

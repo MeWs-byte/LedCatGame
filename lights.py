@@ -149,7 +149,7 @@ def loopLeftSingleRed():
             
         pixels.fill((0,0,0))
         pixels.show()
-        pixels[wanderingpixie + 1] = (255, 0, 0)
+        pixels[wanderingpixie + 1] = (255, 11, 14)
         pixels.show()
         time.sleep(0.1)
         pixels.fill((0,0,0))
@@ -168,7 +168,7 @@ def loopRightSingleRed():
 
         pixels.fill((0,0,0))
         pixels.show()
-        pixels[wanderingpixie - 1] = (255, 0, 0)
+        pixels[wanderingpixie - 1] = (255, 11, 14)
         pixels.show()
         time.sleep(0.1)
         pixels.fill((0,0,0))
@@ -180,3 +180,44 @@ def loopRightSingleRed():
             wanderingpixie = 59
     except:
         IndexError        
+
+def BloopLeftSingleRed():
+    try:
+
+        global wanderingpixie
+
+            
+        pixels.fill((0,0,0))
+        pixels.show()
+        pixels[wanderingpixie + 1] = (255, 11, 14)
+        pixels.show()
+        time.sleep(0.1)
+        pixels.fill((0,0,0))
+        pixels[wanderingpixie] = (255, 31, 14)
+        #pixels[wanderingpixie + 1] = (0, 0, 0)
+        pixels.show()
+        wanderingpixie = wanderingpixie + 1
+
+        if wanderingpixie == 59:
+            wanderingpixie = 0
+    except:
+        IndexError
+        
+def BloopRightSingleRed():
+    global wanderingpixie
+    try:
+
+        pixels.fill((0,0,0))
+        pixels.show()
+        pixels[wanderingpixie - 1] = (255, 11, 14)
+        pixels.show()
+        time.sleep(0.1)
+        pixels.fill((0,0,0))
+        pixels[wanderingpixie] = (255, 31, 14)
+        #pixels[wanderingpixie - 1] = (0, 0, 0)
+        pixels.show()
+        wanderingpixie = wanderingpixie -1 
+        if wanderingpixie == 0:
+            wanderingpixie = 59
+    except:
+        IndexError 
